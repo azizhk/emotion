@@ -5,8 +5,7 @@ import isPropValid from '@emotion/is-prop-valid'
 export type Interpolations = Array<any>
 
 export const testOmitPropsOnStringTag: (key: string) => boolean = isPropValid
-export const testOmitPropsOnComponent = (key: string) =>
-  key !== 'theme' && key !== 'innerRef'
+export const testOmitPropsOnComponent = (key: string) => key !== 'theme'
 export const testAlwaysTrue = () => true
 
 export const pickAssign: (

@@ -8,8 +8,7 @@ export function setTheme(theme: Object) {
 
 export const testPickPropsOnStringTag = isPropValid
 
-export const testPickPropsOnComponent = (key: string) =>
-  key !== 'theme' && key !== 'innerRef'
+export const testPickPropsOnComponent = (key: string) => key !== 'theme'
 export const testAlwaysTrue = () => true
 
 export const pickAssign: (
